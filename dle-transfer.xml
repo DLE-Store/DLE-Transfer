@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dleplugin>
-	<name>Делаем теги глобальными в dle</name>
-	<description></description>
+	<name>DLE Transfer</name>
+	<description>Делаем теги глобальными</description>
 	<icon></icon>
-	<version></version>
-	<dleversion></dleversion>
-	<versioncompare>less</versioncompare>
-	<upgradeurl></upgradeurl>
+	<version>2.0.0</version>
+	<dleversion>13</dleversion>
+	<versioncompare>greater</versioncompare>
+	<upgradeurl>https://raw.githubusercontent.com/DLE-Store/DLE-Transfer/master/update.json</upgradeurl>
 	<filedelete>0</filedelete>
 	<needplugin></needplugin>
 	<mnotice>0</mnotice>
@@ -20,7 +20,17 @@
 	<phpenable><![CDATA[]]></phpenable>
 	<phpdisable><![CDATA[]]></phpdisable>
 	<phpdelete><![CDATA[]]></phpdelete>
-	<notice><![CDATA[]]></notice>
+	<notice><![CDATA[Рассмотрим на примере вывода тега Делаем теги глобальными в DLE с fullstory.tpl в main.tpl
+
+В fullstory.tpl пишем
+[transfer=fulltitle]{title}[/transfer]
+
+И потом в main.tpl в нужном месте
+{transfer_fulltitle}
+
+В итоге Название новости будет показано в файле main.tpl тегом {transfer_fulltitle}
+
+Оригинал – http://zerocoolpro.biz/forum/threads/delaem-tegi-globalnymi-v-dle-plagin.18409/]]></notice>
 	<file name="engine/classes/templates.class.php">
 		<operation action="after">
 			<searchcode><![CDATA[class dle_template {]]></searchcode>
