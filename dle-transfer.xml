@@ -6,7 +6,7 @@
 	<version>2.0.0</version>
 	<dleversion>13</dleversion>
 	<versioncompare>greater</versioncompare>
-	<upgradeurl>https://raw.githubusercontent.com/DLE-Store/DLE-Transfer/master/update.json</upgradeurl>
+	<upgradeurl>https://gitcdn.link/repo/DLE-Store/DLE-Transfer/main/update.json</upgradeurl>
 	<filedelete>0</filedelete>
 	<needplugin></needplugin>
 	<mnotice>0</mnotice>
