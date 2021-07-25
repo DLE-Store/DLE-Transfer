@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dleplugin>
 	<name>DLE Transfer</name>
-	<description>Делаем теги глобальными</description>
+	<description>Делаем теги глобальными(версия для "UImages PRO")</description>
 	<icon></icon>
 	<version>2.0.1</version>
 	<dleversion>13</dleversion>
 	<versioncompare>greater</versioncompare>
 	<upgradeurl>https://gitcdn.link/repo/DLE-Store/DLE-Transfer/main/update.json</upgradeurl>
 	<filedelete>0</filedelete>
-	<needplugin></needplugin>
+	<needplugin>UImages PRO</needplugin>
 	<mnotice>0</mnotice>
 	<mysqlinstall><![CDATA[]]></mysqlinstall>
 	<mysqlupgrade><![CDATA[]]></mysqlupgrade>
@@ -64,7 +64,7 @@ $this->copy_template = preg_replace ( "#\\[(transfer)=(.+?)\\](.*?)\\[/transfer\
 	</file>
 	<file name="engine/modules/main.php">
 		<operation action="before">
-			<searchcode><![CDATA[echo $tpl->result['main'];]]></searchcode>
+			<searchcode><![CDATA[echo uimages($tpl->result['main']);]]></searchcode>
 			<replacecode><![CDATA[/* Глобализация данных by rocksmart */
 if( count($tpl->result['transfer']) > 0 ) {
    foreach($tpl->result['transfer'] as $index => $itsdata) {
