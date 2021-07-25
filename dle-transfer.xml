@@ -3,7 +3,7 @@
 	<name>DLE Transfer</name>
 	<description>Делаем теги глобальными</description>
 	<icon></icon>
-	<version>2.0.0</version>
+	<version>2.0.1</version>
 	<dleversion>13</dleversion>
 	<versioncompare>greater</versioncompare>
 	<upgradeurl>https://gitcdn.link/repo/DLE-Store/DLE-Transfer/main/update.json</upgradeurl>
